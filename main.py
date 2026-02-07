@@ -8,9 +8,9 @@ PORT = 15848#
 class MainWindow(CTk):
     def __init__(self):#self  - screen
         super().__init__()
-        self.geometry('600x450')
-        self.minsize(600, 450)
-        set_appearance_mode('system')
+        self.geometry('600x450')# розмір екрану
+        self.minsize(600, 450)# обмеження екрану
+        set_appearance_mode('system')# кольори
 
         #menu  - ui
         self.menu = CTkFrame(self, width = 200, height= 400)
@@ -176,4 +176,5 @@ class MainWindow(CTk):
 
 
 app = MainWindow()
+
 app.mainloop()
